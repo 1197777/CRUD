@@ -1,6 +1,5 @@
 <?php 
 include_once('connection.php');
-include_once('nav.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,15 +15,15 @@ include_once('nav.php');
 <body>
     <div class="bg-img">
         <div class="content">
-            <header>Login Form</header>
+            <header>Login</header>
             <form action="#">
                 <div class="field">
                     <span class="fa fa-user"></span>
-                    <input type="text" required placeholder="Email">
+                    <input type="text" required placeholder="Gebruikernaam...">
                 </div>
                 <div class="field space">
                     <span class="fa fa-lock"></span>
-                    <input type="password" class="password" required placeholder="password">
+                    <input type="password" class="password" required placeholder="Wachtwoord...">
                     <span class="show">Show</span>
                 </div>
                 <div class="pass">
@@ -33,7 +32,7 @@ include_once('nav.php');
                 <div class="field">
                     <input type="submit" value="LOGIN">
                 </div>
-                <div class="login">or login with</div>
+                <div class="login">of log in met</div>
                 <div class="link">
                     <div class="facebook">
                         <i class="fab fa-facebook-f"><span>Facebook</span></i>

@@ -26,7 +26,12 @@ include_once('connection.php');
             </ul>
         </nav>
         <div class="wd">
-            
+        <h1>Informatie over ons</h1>
+        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis optio porro totam explicabo ducimus labore quae beatae assumenda rerum nostrum placeat a eaque magnam ratione voluptates quasi, temporibus itaque iste.</h4>
+        </div>
+        <div class="wr">
+        <h1>Informatie over ons</h1>
+        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis optio porro totam explicabo ducimus labore quae beatae assumenda rerum nostrum placeat a eaque magnam ratione voluptates quasi, temporibus itaque iste.</h4>
         </div>
     </div> 
 </body>
