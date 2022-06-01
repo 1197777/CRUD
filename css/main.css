@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  .bannerimage{
+    background: url(../img/bannerimage.png) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  nav {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 4%;
+    background: rgba(0, 0, 0, 0.1)
+  }
+  nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 24px 24px;
+  }
+  .logo1{
+    width: 50px;
+  }
+  .logoh1{
+    font-size: 22px;
+    margin-right: 560px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000
+  }
+  a, button{
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+  }
+  .infoimage{
+    background: url(../img/infoimage.png) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .overonsimage{
+    background: url(../img/overonsimage.png) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .wd{
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    opacity: 0.8;
+    margin-top: 80px;
+    margin-left: 650px;
+  }
