@@ -34,5 +34,36 @@ include_once('connection.php');
             </ul>
         </nav>
     </div>
+    <section class="ct">
+        <div class="ct">
+            <h2>contact ons</h2>
+            <p>als je vragen hebt stuur ons een bericht. je kan ons bellen als je vragen hebt</p>
+        </div>
+        <div class="container">
+            <div class="ctInfo">
+                <div class="box">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <h3>address</h3>
+                        <p>Zwanenveld 90101, <br>6538 SN Nijmegen</br></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <h3>phone</h3>
+                        <p>024 890 1416</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <h3>email</h3>
+                        <p>TravelSpace@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
