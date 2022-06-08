@@ -4,25 +4,66 @@
   box-sizing: border-box;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-  .bannerimage{
-    background: url(../img/bannerimage.png) no-repeat;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-  }
-  nav {
-    width: 100%;
-    height: 65px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 4%;
-    background: rgba(0, 0, 0, 0.1)
-  }
-  nav li {
-    display: inline-block;
+.nav-area {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 3%;
+  background: rgba(0, 0, 0, 0.1)
+}
+.nav-area:after {
+  content: '';
+  clear: both;
+  display: block;
+  height: auto;
+} 
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 8px 8px;
+}
+  .nav-area ul {
     list-style: none;
-    padding: 24px 24px;
+    margin: 5;
+  }
+  .nav-area>ul>li {
+    position: relative;
+  }
+  .nav-area ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 13px;
+    display: block;
+  }
+  .nav-area ul ul li  {
+    background: rgba(0, 0, 0, 0.4);
+    width: 8rem;
+  }
+  .nav-area ul ul {
+    position: absolute;
+    padding: 0;
+    min-width: 150px;
+    display: none;
+    top: 100%;
+    left: 0;
+  }
+  .nav-area ul li:hover>ul {
+    display: block;
+  }
+  .nav-area ul ul li:hover a {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .nav-area ul ul li {
+    position: relative;
+  }
+  .nav-area ul ul ul {
+    top: 0;
+    left: 100%;
+  }
+  .nav-area ul ul ul li:hover a {
+    background: rgba(0, 0, 0, 0.3);
   }
   .logo1{
     width: 50px;
@@ -33,6 +74,19 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #000
   }
+  li a::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.4s;
+  }
+  a:hover::after {
+    width: 100%;
+  }
   a, button{
     font-size: 19px;
     font-weight: 500;
@@ -42,6 +96,59 @@
     position: relative;
     cursor: pointer;
   }
+  .bannerimage{
+    background: url(../img/bannerimage.png) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .middentekst h1{
+    width: 900px;
+    font-size: 47px;
+    font-weight: 100;
+    margin-top: 275px;
+    display: flex;
+    position: relative;
+    left: 400px;
+    padding-bottom: 10px;
+    line-height: 1;
+    text-shadow: 0 1px 1px #727272;
+  }
+  .middentekst h1:after {
+    width: 75px;
+    height: 3px;
+    background-color: hsla(0,0%,100%,.8);
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    content: "";
+  }
+  .middentekst h2{
+    width: 500px;
+    font-size: 32px;
+    font-weight: 300;
+    display: flex;
+    position: relative;
+    left: 400px;
+    top: 40px;
+    line-height: 1;
+    text-shadow: 0 1px 1px #727272;
+  }
+  input[type="text"],
+  select,
+  textarea {
+  width: 250px;
+  height: 50px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-top: 130px;
+  margin-bottom: 16px;
+  resize: vertical;
+  margin-left: 170px;
+}
   .infoimage{
     background: url(../img/infoimage.png) no-repeat;
     height: 100vh;
@@ -54,53 +161,11 @@
     background-size: cover;
     background-position: center;
   }
-  .wd{
-    width: 768px;
-    height: 340px;
-    background-color: #fff;
-    opacity: 0.9;
-    margin-top: -1px;
-  }
-  .wd h1{
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: 100px;
-    color: #000;
-  }
-  .wd h4{
-    text-align: justify;
-    color: darkgray;
-    font-weight: normal;
-    margin-top: 30px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-  }
-  .wr{
-    width: 768px;
-    height: 341px;
-    background-color: #fff;
-    opacity: 0.9;
-    margin-left: 767px;
-    margin-top: 0px;
-  }
-  .wr h1{
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: 100px;
-    color: #000;
-  }
-  .wr h4{
-    text-align: justify;
-    color: darkgray;
-    font-weight: normal;
-    margin-top: 30px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-  }
   .bg-img{
     background-image: url(../img/beach.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
-
 }
 .bg-img:after{
     position: absolute;
