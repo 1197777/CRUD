@@ -25,8 +25,10 @@ include_once('connection.php');
                 <ul>             
 				<li><a href="#">Europa</a></li>	
 				<li><a href="#">Midden-Oosten</a></li>
-				<li><a href="#">Noord-Amerika</a>	</li>
+                <li><a href="#">Latijns-Amerika</a></li>
+				<li><a href="#">Noord-Amerika</a></li>
 				<li><a href="#">Azië</a></li>
+                <li><a href="#">Afrika</a></li>
                 </ul></li>
                 <li><a href="overons.php">Over ons</a></li>
                 <li><a href="contact.php">Contact</a></li>
