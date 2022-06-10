@@ -12,27 +12,27 @@ include_once('connection.php');
 </head>
 <body>
 <div class="infoimage">
-        <nav>
+<nav class="nav-area">
             <img class= "logo1"src="img/logo.png" alt="image1">
             <div class="logoh1">
                 <h1>TravelSpace</h1>
             </div>
             <ul>
                 <li><a href="index.php" class="active">Home</a></li>
-                <li><a href="informatie.php">Informatie</a></li>
+                <li><a href="bestemmingen.php">Bestemmingen</a> 
+                <ul>             
+				<li><a href="#">Europa</a></li>	
+				<li><a href="#">Midden-Oosten</a></li>
+                <li><a href="#">Latijns-Amerika</a></li>
+				<li><a href="#">Noord-Amerika</a></li>
+				<li><a href="#">Azië</a></li>
+                <li><a href="#">Afrika</a></li>
+                </ul></li>
                 <li><a href="overons.php">Over ons</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="login.php">Login</a></li>
             </ul>
         </nav>
-        <div class="wd">
-        <h1>Informatie over ons</h1>
-        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis optio porro totam explicabo ducimus labore quae beatae assumenda rerum nostrum placeat a eaque magnam ratione voluptates quasi, temporibus itaque iste.</h4>
-        </div>
-        <div class="wr">
-        <h1>Informatie over ons</h1>
-        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis optio porro totam explicabo ducimus labore quae beatae assumenda rerum nostrum placeat a eaque magnam ratione voluptates quasi, temporibus itaque iste.</h4>
-        </div>
     </div> 
 </body>
 </html>
