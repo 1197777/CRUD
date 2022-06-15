@@ -1,5 +1,24 @@
 <?php 
 include_once('connection.php');
+
+if($_SERVER["REQUEST_METHOD"]=="POST")
+{
+    $username=$_POST["username"];
+    $password=$_POST["password"];
+
+    $stmt = $connect->prepare("select * from admin where username= :username AND password= :password");
+    $stmt->execute(['username' => $username, 'password' => $password]); 
+    $data = $stmt->fetch();
+    $gevondenRows = $stmt->rowCount();
+    
+    if ($gevondenRows) {
+        session_start();
+        $_SESSION['user'] = 'admin';
+        header("Location: admin.php");
+    } else {
+        header("Location: login.php");
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
