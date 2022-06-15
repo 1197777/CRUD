@@ -39,7 +39,7 @@ nav li {
   }
   .nav-area ul ul li  {
     background: rgba(0, 0, 0, 0.4);
-    width: 7rem;
+    width: 8rem;
   }
   .nav-area ul ul {
     position: absolute;
@@ -183,10 +183,107 @@ nav li {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
     color: rgb(64, 64, 64);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     line-height: 120%;
     padding: 40px;
     text-align: left;
+  }
+  .container-stukje2 h1{
+    font-size: 40px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .image{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    height: 50px;
+    margin-top: 25px;
+  }
+  .image-tekst{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    left: 50px;
+    color: #000;
+  }
+  .image-tekst2{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .image-tekst3{
+    position: absolute;
+    font-size: 32px;
+    font-weight: bold;
+    left: 160px;
+    top: 280px;
+    color: #fff;
+  }
+  .image-tekst4{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .image h4{
+    position: absolute;
+    top: 0;
+    color: #fff;
+  }
+  figure{
+    overflow: hidden;
+    margin: 0 10px;
+  }
+  #img1{
+    position: relative;
+    bottom: 315px;
+    left: 65px;
+    width: 90%;
+    border-radius: 10px;
+  }
+  #img2{
+    position: relative;
+    bottom: 315px;
+    left: 30px;
+    width: 90%;
+    border-radius: 10px;
+  }
+  #img3{
+    position: relative;
+    top: 5px;
+    left: -5px;
+    width: 82%;
+    border-radius: 10px;
+  }
+  #img4{
+    position: relative;
+    bottom: 324px;
+    left: 65px;
+    width: 90%;
+    border-radius: 10px;
+  }
+  #img5{
+    position: relative;
+    bottom: 324px;
+    left: 30px;
+    width: 90%;
+    border-radius: 10px;
+  }
+  .image img{
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  .image #zoom-in img{
+    transform: scale(1);
+    transition: 0.4s ease-in-out;
+  }
+  .image #zoom-in:hover img{
+    transform: scale(1.5);
   }
   .infoimage{
     background: url(../img/infoimage.png) no-repeat;
