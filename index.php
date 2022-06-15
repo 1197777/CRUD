@@ -38,10 +38,10 @@ include_once('connection.php');
             <h2>Individuele reizen op maat.</h2>
         </div>
         <div class="container-box">
-             <label for="bestemming">Waar wilt u heen?</label>
+             <label for="bestemming"></label>
                 <select id="country" name="country">
                     <option value="#">Alle Bestemmingen...</option>
-                    <option value="Waar wilt u heen?">Spanje</option>
+                    <option value="#">Spanje</option>
                     <option value="#">Zuid-Afrika</option>
                 </select>
                 <label for="soortreis"></label>
@@ -52,16 +52,70 @@ include_once('connection.php');
                 </select>
                 <label for="datum"></label>
                 <select id="country" name="country">
-                    <option value="januari">Alle Periodes...</option>
-                    <option value="januari">Januari</option>
-                    <option value="februari">Februari</option>
+                    <option value="#">Alle Periodes...</option>
+                    <option value="#">Januari</option>
+                    <option value="#">Februari</option>
                 </select>
         </div>
     </div> 
     <div class="container-stuk">
         <div class="container-stukje">
             <h1>TravelSpace brengt je dichterbij</h1>
-           <p>Welkom bij TravelSpace, een persoonlijke en eigenwijze reisorganisatie. Voor ons is reizen het mooiste dat er is. We laten je de highlights zien, maar ook de onbekende plekken. Wij reizen veelvuldig de wereld over en creëren onze eigen routes en ervaringen. Dit doen we samen met onze partners ter plaatse zodat we jou écht het land kunnen laten zien. Het liefst zo ver mogelijk van de platgetrapte paden, dichtbij de natuur en veel in contact met de bevolking en cultuur van een land, waardoor de bevolking maximaal mee profiteert. Onze hotels zijn handpicked, kleinschalig en liggen veelal op unieke plekken. Zo brengen we je dichterbij je bestemming én zo ook dichterbij een mooiere wereld. Want als je met Riksja reist ben je ervan verzekerd dat je verantwoord reist en positief bijdraagt.</p>
+           <p>Welkom bij TravelSpace, een persoonlijke en eigenwijze reisorganisatie. Voor ons is reizen het mooiste dat er is. We laten je de highlights zien, maar ook de onbekende plekken. Wij reizen veelvuldig de wereld over en creëren onze eigen routes en ervaringen. Dit doen we samen met onze partners ter plaatse zodat we jou écht het land kunnen laten zien. Het liefst zo ver mogelijk van de platgetrapte paden, dichtbij de natuur en veel in contact met de bevolking en cultuur van een land, waardoor de bevolking maximaal mee profiteert. Onze hotels zijn handpicked, kleinschalig en liggen veelal op unieke plekken. Zo brengen we je dichterbij je bestemming én zo ook dichterbij een mooiere wereld. Want als je met TravelSpace reist ben je ervan verzekerd dat je verantwoord reist en positief bijdraagt.</p>
+        </div>
+    </div>
+    <div class="container-stuk2">
+        <div class="row">
+            <div class="image">
+                <div id="zoom-in">
+                    <figure id="img1">
+                        <img src="img/spain-image.jpg" alt="">
+                    </figure>
+                    <div class="image-tekst">
+                        <h4>Spain</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div id="zoom-in">
+                    <figure id="img2">
+                        <img src="img/turkey-image.jpg" alt="">
+                    </figure>
+                    <div class="image-tekst">
+                        <h4>Turkey</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div id="zoom-in">
+                    <figure id="img3">
+                        <img src="img/brazil-image.jpg" alt="" >
+                    </figure>
+                    <div class="image-tekst3">
+                        <h4>Brazil</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div id="zoom-in">
+                    <figure id="img4">
+                        <img src="img/us-image.jpg" alt="">
+                    </figure>
+                    <div class="image-tekst">
+                        <h4>United States</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div id="zoom-in">
+                    <figure id="img5">
+                        <img src="img/thailand-image.jpg" alt="">
+                    </figure>
+                    <div class="image-tekst">
+                        <h4>Thailand</h4>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
