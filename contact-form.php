@@ -4,13 +4,14 @@
 
  if(isset($_POST['submit'])) {
     $name = $_POST['name'];
-    $subject = $_POST['subject'];
-    $mailFrom = $_POST ['mail'];
+    $phone = $_POST['phone'];
+    $email = $_POST ['email'];
     $message = $_POST['message'];
 
    $mailTo = "1198084@student.roc-nijmegen.nl";
-   $headers = "from: ". $mailFrom;
+   $headers = "from: ". $email;
    $txt = "je hebt een email" .$name.".\n\n".$message;
+   $subject = "nieuwe mail van applicatie";
 
    mail($mailTo, $subject, $txt, $headers);
    header("Location: index.php?mailsend");

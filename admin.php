@@ -5,7 +5,7 @@ session_start();
 if ($_SESSION['user'] !== 'admin'){
     header("Location: edit.php");
 }
-$sql = "SELECT * FROM menu";
+$sql = "SELECT * FROM boekingen";
 $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
