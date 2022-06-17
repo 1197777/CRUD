@@ -35,10 +35,10 @@ include_once('connection.php');
         </nav>
         <div class="middentekst">
             <h1>Verre Reizen. Voor Iedereen Uniek.</h1>
-            <h2>Individuele reizen op maat.</h2>
+            <h2>Maak van jouw eerstvolgende reis een unieke ervaring!</h2>
         </div>
         <div class="container-box">
-             <label for="bestemming"></label>
+           <!--<label for="bestemming"></label>
                 <select id="country" name="country">
                     <option value="#">Alle Bestemmingen...</option>
                     <option value="#">Spanje</option>
@@ -55,68 +55,82 @@ include_once('connection.php');
                     <option value="#">Alle Periodes...</option>
                     <option value="#">Januari</option>
                     <option value="#">Februari</option>
-                </select>
+                </select>-->
         </div>
-    </div> 
+    </div>
     <div class="container-stuk">
         <div class="container-stukje">
             <h1>TravelSpace brengt je dichterbij</h1>
            <p>Welkom bij TravelSpace, een persoonlijke en eigenwijze reisorganisatie. Voor ons is reizen het mooiste dat er is. We laten je de highlights zien, maar ook de onbekende plekken. Wij reizen veelvuldig de wereld over en creëren onze eigen routes en ervaringen. Dit doen we samen met onze partners ter plaatse zodat we jou écht het land kunnen laten zien. Het liefst zo ver mogelijk van de platgetrapte paden, dichtbij de natuur en veel in contact met de bevolking en cultuur van een land, waardoor de bevolking maximaal mee profiteert. Onze hotels zijn handpicked, kleinschalig en liggen veelal op unieke plekken. Zo brengen we je dichterbij je bestemming én zo ook dichterbij een mooiere wereld. Want als je met TravelSpace reist ben je ervan verzekerd dat je verantwoord reist en positief bijdraagt.</p>
+          
+           <div class="opt">
+            <a href="overons.php">
+            <button type="submit">Lees Meer</button>
+            </a>
+        </div>
         </div>
     </div>
     <div class="container-stuk2">
-        <div class="row">
-            <div class="image">
-                <div id="zoom-in">
-                    <figure id="img1">
-                        <img src="img/spain-image.jpg" alt="">
-                    </figure>
-                    <div class="image-tekst">
-                        <h4>Spain</h4>
+           <h1>Populaire Bestemmingen</h1>
+           <a href="bestemmingen.php">Alle Bestemmingen ></a>
+        <div class="alle-images">
+            <div class="linkerkant">
+                <div class="image">
+                    <div id="zoom-in">
+                    <figure>
+                            <img src="img/spain-image.jpg" alt="">
+                        <div class="image-tekst">
+                        <h4>Spanje</h4>
                     </div>
+                        </figure>
                 </div>
             </div>
             <div class="image">
                 <div id="zoom-in">
-                    <figure id="img2">
+                    <figure>
                         <img src="img/turkey-image.jpg" alt="">
-                    </figure>
                     <div class="image-tekst">
-                        <h4>Turkey</h4>
+                        <h4>Turkije</h4>
                     </div>
-                </div>
-            </div>
-            <div class="image">
-                <div id="zoom-in">
-                    <figure id="img3">
-                        <img src="img/brazil-image.jpg" alt="" >
                     </figure>
-                    <div class="image-tekst3">
-                        <h4>Brazil</h4>
-                    </div>
                 </div>
             </div>
             <div class="image">
                 <div id="zoom-in">
-                    <figure id="img4">
+                    <figure>
                         <img src="img/us-image.jpg" alt="">
-                    </figure>
                     <div class="image-tekst">
-                        <h4>United States</h4>
+                        <h4>Amerika</h4>
                     </div>
+                    </figure>
                 </div>
             </div>
             <div class="image">
                 <div id="zoom-in">
-                    <figure id="img5">
+                    <figure>
                         <img src="img/thailand-image.jpg" alt="">
-                    </figure>
                     <div class="image-tekst">
                         <h4>Thailand</h4>
                     </div>
+                    </figure>
                 </div>
             </div>
-        </div>
+
+            </div>
+            <div class="rechterkant">
+            <div class="image">
+                <div id="zoom-in">
+                    <figure>
+                        <img src="img/brazil-image.jpg" alt="" >
+                        <div class="image-tekst">
+                            <h4>Brazilië</h4>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+            </div>
+          </div>
     </div>
 </body>
 </html>
