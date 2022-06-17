@@ -2,10 +2,12 @@
 include_once('connection.php');
 
 session_start();
-if ($_SESSION['user'] !== 'admin'){
-    header("Location: edit.php");
+
+if (!$_SESSION['admin']){
+    header("Location: login.php");
 }
-$sql = "SELECT * FROM boekingen";
+
+$sql = "SELECT * FROM reizen";
 $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
