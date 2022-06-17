@@ -16,11 +16,11 @@ include_once('connection.php');
             <div class="left"></div>
             <div class="right">
                 <h2>Contact ons</h2>
-                <input type="text" class="field" placeholder="your name">
-                <input type="email" class="field" placeholder="your email">
-                <input type="email" class="field" placeholder="your phone">
-                <textarea class="field area" placeholder="Message"></textarea>
-                <button class="btn">Stuur</button>
+                <input type="text" class="field" placeholder="Naam..." name="name">
+                <input type="email" class="field" placeholder="Email..." name="email">
+                <input type="text" class="field" placeholder="Telefoon..." name="phone">
+                <textarea class="field area" placeholder="Message..." name="message"></textarea>
+                <button class="btn" name="submit">Stuur</button>
                 </form>
             </div>
         </div>
