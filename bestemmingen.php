@@ -21,12 +21,12 @@ include_once('connection.php');
                 <li><a href="index.php">Home</a></li>
                 <li><a href="bestemmingen.php" class="active">Bestemmingen</a> 
                 <ul>             
-				<li><a href="#">Europa</a></li>	
-				<li><a href="#">Midden-Oosten</a></li>
-                <li><a href="#">Latijns-Amerika</a></li>
-				<li><a href="#">Noord-Amerika</a></li>
-				<li><a href="#">Azië</a></li>
-                <li><a href="#">Afrika</a></li>
+                <li><a href="eu.php">Europa</a></li>	
+				<li><a href="mo.php">Midden-Oosten</a></li>
+                <li><a href="mza.php">Midden- Zuid-Amerika</a></li>
+				<li><a href="na.php">Noord-Amerika</a></li>
+				<li><a href="azië.php">Azië</a></li>
+                <li><a href="afrika.php">Afrika</a></li>
                 </ul></li>
                 <li><a href="overons.php">Over ons</a></li>
                 <li><a href="contact.php">Contact</a></li>
@@ -34,8 +34,5 @@ include_once('connection.php');
             </ul>
         </nav>
     </div> 
-    <div class="spt">
-        
-    </div>
 </body>
 </html>

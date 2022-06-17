@@ -21,12 +21,12 @@ include_once('connection.php');
                 <li><a href="index.php" class="active">Home</a></li>
                 <li><a href="bestemmingen.php">Bestemmingen</a> 
                 <ul>             
-				<li><a href="#">Europa</a></li>	
-				<li><a href="#">Midden-Oosten</a></li>
-                <li><a href="#">Latijns-Amerika</a></li>
-				<li><a href="#">Noord-Amerika</a></li>
-				<li><a href="#">Azië</a></li>
-                <li><a href="#">Afrika</a></li>
+				<li><a href="eu.php">Europa</a></li>	
+				<li><a href="mo.php">Midden-Oosten</a></li>
+                <li><a href="mza.php">Midden- Zuid-Amerika</a></li>
+				<li><a href="na.php">Noord-Amerika</a></li>
+				<li><a href="azië.php">Azië</a></li>
+                <li><a href="afrika.php">Afrika</a></li>
                 </ul></li>
                 <li><a href="overons.php">Over ons</a></li>
                 <li><a href="contact.php">Contact</a></li>
@@ -38,24 +38,7 @@ include_once('connection.php');
             <h2>Maak van jouw eerstvolgende reis een unieke ervaring!</h2>
         </div>
         <div class="container-box">
-           <!--<label for="bestemming"></label>
-                <select id="country" name="country">
-                    <option value="#">Alle Bestemmingen...</option>
-                    <option value="#">Spanje</option>
-                    <option value="#">Zuid-Afrika</option>
-                </select>
-                <label for="soortreis"></label>
-                <select id="country" name="country">
-                    <option value="#">Alles...</option>
-                    <option value="#">Wintersport</option>
-                    <option value="#">Zon</option>
-                </select>
-                <label for="datum"></label>
-                <select id="country" name="country">
-                    <option value="#">Alle Periodes...</option>
-                    <option value="#">Januari</option>
-                    <option value="#">Februari</option>
-                </select>-->
+          
         </div>
     </div>
     <div class="container-stuk">

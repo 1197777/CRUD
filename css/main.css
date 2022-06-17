@@ -136,20 +136,6 @@ nav li {
     line-height: 1;
     text-shadow: 0 1px 1px #727272;
   }
-  /*input[type="text"],
-  select,
-  textarea {
-    width: 250px;
-    height: 50px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin-top: 130px;
-    margin-bottom: 16px;
-    resize: vertical;
-    margin-left: 170px;
-}*/
 .container-stuk{
     width: 100%;
     height: 500px;
@@ -182,17 +168,27 @@ nav li {
   background-color: #2e96fe;
 }
 .container-stukje h1{
-    font-family: Montserrat,sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0;
-    color: #272727;
-    margin: 0;
-    padding: 5px;
-    margin-top: 35px;
-    margin-left: 38px;
+  font-family: Montserrat,sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #272727;
+  margin: 0;
+  padding: 5px;
+  margin-top: 35px;
+  margin-left: 38px;
+}
+.container-stukje p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: rgb(64, 64, 64);
+    position: relative;
+    bottom: 20px;
+    line-height: 120%;
+    padding: 45px;
+    text-align: left;
   }
-  .container-stuk2 h1{
+.container-stuk2 h1{
     font-size: 32px;
     position: relative;
     top: 60px;
@@ -240,16 +236,6 @@ nav li {
     margin-top: 100px;
     position: relative;
     right: 14px;
-  }
-.container-stukje p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    color: rgb(64, 64, 64);
-    position: relative;
-    bottom: 20px;
-    line-height: 120%;
-    padding: 45px;
-    text-align: left;
   }
   .image{
     position: relative;
@@ -299,8 +285,242 @@ nav li {
     background-size: cover;
     background-position: center;
   }
-  .spt{
+  .nav-area2 {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background: rgb(247, 246, 246);
+  }
+  .nav-area2:after {
+    content: '';
+    clear: both;
+    display: block;
+    height: auto;
+  } 
+  nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 6px 6px;
+  }
+    .nav-area2 ul {
+      list-style: none;
+      margin: 5;
+    }
+    .nav-area2>ul>li {
+      position: relative;
+    }
+    .nav-area2 ul li a  {
+      text-decoration: none;
+      color: #000;
+      padding: 3px 8px;
+      display: block;
+    }
+    .nav-area2 ul ul li  {
+      background: rgba(0, 0, 0, 0.4);
+      width: 8rem;
+    }
+    .nav-area2 ul ul {
+      position: absolute;
+      padding: 0;
+      min-width: 150px;
+      display: none;
+      top: 100%;
+      left: 0;
+      z-index: 99;
+    }
+    .nav-area2 ul li:hover>ul {
+      display: block;
+      left: 15px;
+    }
+    .nav-area2 ul ul li:hover a {
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .nav-area2 ul ul li {
+      position: relative;
+    }
+    .nav-area2 ul ul ul {
+      top: 0;
+      left: 100%;
+    }
+    .nav-area2 ul ul ul li:hover a {
+      background: rgba(0, 0, 0, 0.4);
+    }
+    #lr{
+      color: #fff;
+    }
+    .logo1{
+      width: 50px;
+    }
+    .logoh1{
+      font-size: 22px;
+      margin-right: 560px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #000
+    }
+    li a::after {
+      content: "";
+      position: absolute;
+      background-color: #fff;
+      height: 2px;
+      width: 0;
+      left: 0;
+      bottom: -3px;
+      transition: 0.4s;
+    }
+    a:hover::after {
+      width: 100%;
+    }
+    a, button{
+      font-size: 19px;
+      font-weight: 500;
+      color: #000;
+      font-family: "Poppins", sans-serif;
+      text-decoration: none;
+      position: relative;
+      cursor: pointer;
+    }
+  .eucontainer h1{
+    font-size: 32px;
+    position: relative;
+    top: 60px;
+    margin-left: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .eucontainer a{
+    color: rgb(176, 174, 174);
+    position: relative;
+    top: 40px;
+    margin-left: 1030px;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .eucontainer a:hover{
+    color: rgb(139, 138, 138);
+  }
 
+  .eucontainer {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+
+  .alle-images2 {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  .alle-images2 .linkerkant2 {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 17px;
+    column-gap: 20px;
+    width: 70%;
+    height: auto;
+    margin-top: 100px;
+  }
+
+  .alle-images2 .rechterkant2 {
+    display: flex;
+    width: 31%;
+    height: auto;
+    margin-top: 100px;
+    position: relative;
+    right: 14px;
+  }
+  .image2{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 48%;
+    height: auto;
+  }
+  .rechterkant2 .image2 {
+    width: 100%;
+    height: 100%;
+  }
+  .image-tekst2{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+  }
+  figure{
+    overflow: hidden;
+    margin: 0 10px;
+  }
+  figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .image2 img{
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  .image2 #zoom-in2 img{
+    transform: scale(1);
+    transition: 0.4s ease-in-out;
+  }
+  .image2 #zoom-in2:hover img{
+    transform: scale(1.5);
+  }
+  .mocontainer h1{
+    font-size: 32px;
+    position: relative;
+    top: 60px;
+    margin-left: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .mocontainer a{
+    color: rgb(176, 174, 174);
+    position: relative;
+    top: 40px;
+    margin-left: 1030px;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .mocontainer a:hover{
+    color: rgb(139, 138, 138);
+  }
+
+  .mocontainer {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+  .mzacontainer a{
+    color: rgb(176, 174, 174);
+    position: relative;
+    top: 40px;
+    margin-left: 1030px;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .mzacontainer h1{
+    font-size: 32px;
+    position: relative;
+    top: 60px;
+    margin-left: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .mzacontainer a:hover{
+    color: rgb(139, 138, 138);
+  }
+  .mzacontainer{
+    width: 80%;
+    height: auto;
+    margin: auto;
   }
   .overonsimage{
     background: url(../img/overonsimage.png) no-repeat;
