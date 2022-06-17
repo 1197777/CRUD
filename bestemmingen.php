@@ -11,15 +11,15 @@ include_once('connection.php');
     <title>Document</title>
 </head>
 <body>
-<div class="infoimage">
+<div class="bestemmingen-image">
 <nav class="nav-area">
             <img class= "logo1"src="img/logo.png" alt="image1">
             <div class="logoh1">
                 <h1>TravelSpace</h1>
             </div>
             <ul>
-                <li><a href="index.php" class="active">Home</a></li>
-                <li><a href="bestemmingen.php">Bestemmingen</a> 
+                <li><a href="index.php">Home</a></li>
+                <li><a href="bestemmingen.php" class="active">Bestemmingen</a> 
                 <ul>             
 				<li><a href="#">Europa</a></li>	
 				<li><a href="#">Midden-Oosten</a></li>
@@ -34,5 +34,8 @@ include_once('connection.php');
             </ul>
         </nav>
     </div> 
+    <div class="spt">
+        
+    </div>
 </body>
 </html>
