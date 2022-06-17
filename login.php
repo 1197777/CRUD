@@ -1,4 +1,5 @@
 <?php 
+session_start();
 include_once('connection.php');
 
 if($_SERVER["REQUEST_METHOD"]=="POST")
@@ -10,13 +11,20 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $stmt->execute(['gebruikersnaam' => $username, 'wachtwoord' => $password]); 
     $data = $stmt->fetch();
     $gevondenRows = $stmt->rowCount();
-    
+    var_dump($data);
+    echo ($gevondenRows);
     if ($gevondenRows) {
-        session_start();
         $_SESSION['user'] = $data['username'];
-        header("Location: admin.php");
+        if ($data['admin'] == '1') {
+            $_SESSION['admin'] = true;
+            header("Location: admin.php");
+            exit();
+        }
+        header("Location: index.php");
+        exit();
     } else {
-        header("Location: login.php");
+        // header("Location: login.php");
+        // exit();
     }
 }
 ?>
