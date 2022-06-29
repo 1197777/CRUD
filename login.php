@@ -54,7 +54,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
                     <span class="show">Show</span>
                 </div>
                 <div class="pass">
-                    <a href="#">Wachtwoord vergeten?</a>
+                    <a href="register.php">Wachtwoord vergeten?</a>
                 </div>
                 <div class="field">
                     <input type="submit" value="LOGIN" name="submit">
@@ -62,14 +62,18 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
                 <div class="login">of log in met</div>
                 <div class="link">
                     <div class="facebook">
+                        <a href="https://nl-nl.facebook.com/">
                         <i class="fab fa-facebook-f"><span>Facebook</span></i>
+                        </a>
                     </div>
                     <div class="instagram">
+                        <a href="https://www.instagram.com/">
                         <i class="fab fa-instagram"><span>Instagram</span></i>
+                        </a>
                     </div>
                 </div>
                 <div class="signup">Nog geen account?
-                    <a href="#">Registreer Nu</a>
+                    <a href="register.php">Registreer Nu</a>
                 </div>
             </form>
         </div>
@@ -89,6 +93,5 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             }
         });
     </script>
-    
 </body>
 </html>

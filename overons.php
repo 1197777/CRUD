@@ -1,38 +1,28 @@
 <?php 
 include_once('connection.php');
 ?>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
+    <link rel="stylesheet" href="css/about.css">
 </head>
-<body>  
-    <div class="overonsimage">
-    <nav class="nav-area">
-            <img class= "logo1"src="img/logo.png" alt="image1">
-            <div class="logoh1">
-                <h1>TravelSpace</h1>
+<body>
+<img class= "logo2"src="img/logo.png" alt="" onclick="document.location='index.php'">
+           
+    <div class="about-section">
+        <div class="inner-container">
+            <h1>Over TravelSpace</h1>
+            <p class="text">
+            Al meer dan 20 jaar laten we je de wereld zien. Dat is meer dan 20 jaar aan reiservaring, avonturen en onvergetelijke momenten. Vanaf het allereerste begin zit verantwoord reizen in ons DNA, als reisorganisatie op het gebied van individuele reizen, hebben we ons dan ook altijd 100% ingezet voor onze reizigers en de communities die we bezoeken. De routes op onze bestemmingen hebben we zelf uitgestippeld, het liefst zo ver mogelijk van de massa. Onze hotels zijn handpicked, kleinschalig en liggen veelal op unieke plekken waarbij we zoveel mogelijk gebruik maken van lokale ondernemers, zodat iedereen mee profiteert van de reizen die we maken. Daar komt bij dat we klimaat positief werken. Dat betekent dat we méér CO2 compenseren dan we met onze reizen uitstoten en tijdens de reis zoveel mogelijk reduceren. Zo reizen we samen de wereld mooier.
+            </p>
+            <div class="text2">
+                <span>Bouw je eigen reis!</span>
+                <span>Voor & door reizigers! </span>
+                <span>Hart voor de wereld!</span>
             </div>
-            <ul>
-                <li><a href="index.php" class="active">Home</a></li>
-                <li><a href="bestemmingen.php">Bestemmingen</a> 
-                <ul>             
-                <li><a href="eu.php">Europa</a></li>	
-				<li><a href="mo.php">Midden-Oosten</a></li>
-                <li><a href="la.php">Latijns-Amerika</a></li>
-				<li><a href="na.php">Noord-Amerika</a></li>
-				<li><a href="azië.php">Azië</a></li>
-                <li><a href="afrika.php">Afrika</a></li>
-                </ul></li>
-                <li><a href="overons.php">Over ons</a></li>
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="login.php">Login</a></li>
-            </ul>
-        </nav>
-    </div> 
+        </div>
+    </div>
 </body>
 </html>

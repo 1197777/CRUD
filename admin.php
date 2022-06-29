@@ -19,10 +19,11 @@ $result = $stmt->fetchAll();
 </tr>
 <?php foreach($result as $re){?>
     <tr>
-        <td><?php echo $re["naam"];?></td> 
-        <td><?php echo $re["prijs"];?></td>
-        <td><a href="edit.php?id=<?php echo $re["ID"];?>">Update</a></td>
-        <td><a href="delete.php?id=<?php echo $re["ID"];?>">Delete</a></td>
+        <td><?php echo $re["hotel"];?></td> 
+        <td><?php echo $re["kosten"];?></td>
+        <td><?php echo $re["land"];?></td>
+        <td><a href="edit.php?id=<?php echo $re["reisID"];?>">Update</a></td>
+        <td><a href="delete.php?id=<?php echo $re["reisID"];?>">Delete</a></td>
       </td>
 </tr>
 

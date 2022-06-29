@@ -13,7 +13,7 @@ include_once('connection.php');
 <body>
         <form action="contact-form.php" method="POST">
             <div class="container">
-        <div class="container-box">
+       <div class="container-box">
             <div class="left"></div>
             <div class="right">
                 <h2>Contact ons</h2>
@@ -22,9 +22,9 @@ include_once('connection.php');
                 <input type="text" class="field" placeholder="Telefoon..." name="phone">
                 <textarea class="field area" placeholder="Message..." name="message"></textarea>
                 <button class="btn" name="submit">Stuur</button>
-            </form>
+         </form>
         </div>
-    </div>
+         </div>
     
 </div>
 </form>
