@@ -7,26 +7,25 @@ if (!$_SESSION['admin']){
     header("Location: login.php");
 }
 
-$sql = "SELECT * FROM reizen";
+$sql = "SELECT * FROM gebruikers";
 $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
 ?>
 <a href="insert.php">insert</a>
 <a href="loguit.php">uitloggen</a> 
-<a href="booking.php">booking</a>
-<a href="account.php">account</a>
+<a href="admin.php">admin</a>
 <a href="recensies.php">recensies</a>
 <table>
     <tr>
 </tr>
 <?php foreach($result as $re){?>
     <tr>
-        <td><?php echo $re["hotel"];?></td> 
-        <td><?php echo $re["kosten"];?></td>
-        <td><?php echo $re["land"];?></td>
-        <td><a href="edit.php?id=<?php echo $re["reisID"];?>">Update</a></td>
-        <td><a href="delete.php?id=<?php echo $re["reisID"];?>">Delete</a></td>
+        <td><?php echo $re["gebruikersnaam"];?></td> 
+        <td><?php echo $re["wachtwoord"];?></td>
+        <td><?php echo $re["gebruikerID"];?></td>
+        <td><a href="edit.php?id=<?php echo $re["gebruikerID"];?>">Update</a></td>
+        <td><a href="delete.php?id=<?php echo $re["gebruikerID"];?>">Delete</a></td>
       </td>
 </tr>
 

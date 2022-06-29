@@ -10,33 +10,7 @@ include_once('connection.php');
     <link rel="stylesheet" href="css/contact.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="contact">
-
-    
-<nav class="nav-area">
-            <img class= "logo1"src="img/logo.png" alt="image1">
-            <div class="logoh1">
-                <h1>TravelSpace</h1>
-            </div>
-            <ul>
-                <li><a href="index.php" class="active">Home</a></li>
-                <li><a href="bestemmingen.php">Bestemmingen</a> 
-                <ul>             
-                <li><a href="eu.php">Europa</a></li>	
-				<li><a href="mo.php">Midden-Oosten</a></li>
-                <li><a href="la.php">Latijns-Amerika</a></li>
-				<li><a href="na.php">Noord-Amerika</a></li>
-				<li><a href="azië.php">Azië</a></li>
-                <li><a href="afrika.php">Afrika</a></li>
-                </ul></li>
-                <li><a href="overons.php">Over ons</a></li>
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="login.php">Login</a></li>
-            </ul>
-        </nav>
-    </div>
-   
+<body>   
 <form action="contact-form.php" method="POST">
     <div class="container">
         <div class="container-box">

@@ -87,14 +87,14 @@ h2::after{
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
-    background-color: #2ecc71;
+    background-color: #5eabf9;
     cursor: pointer;
     outline: none;
     border: none;
     transition: .3s;
 }
 .btn:hover{
-    background-color: #27ae60;
+    background-color: #2e96fe;
 }
 @media screen and (max-width:880px){
     .container-box{
