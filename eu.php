@@ -40,6 +40,7 @@
                             <img src="img/spain2-image.jpg" alt="">
                         <div class="image-tekst">
                         <h4>Spanje</h4>
+                        
                     </div>
                         </figure>
                 </div>

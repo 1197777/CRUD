@@ -10,10 +10,10 @@ include_once('connection.php');
     <link rel="stylesheet" href="css/contact.css">
     <title>Document</title>
 </head>
-<body>
-        <form action="contact-form.php" method="POST">
-            <div class="container">
-       <div class="container-box">
+<body>   
+<form action="contact-form.php" method="POST">
+    <div class="container">
+        <div class="container-box">
             <div class="left"></div>
             <div class="right">
                 <h2>Contact ons</h2>

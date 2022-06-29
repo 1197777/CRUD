@@ -14,6 +14,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     var_dump($data);
     echo ($gevondenRows);
     if ($gevondenRows) {
+        $_SESSION['gebruikerID'] = $data['gebruikerID'];
         $_SESSION['user'] = $data['username'];
         if ($data['admin'] == '1') {
             $_SESSION['admin'] = true;
