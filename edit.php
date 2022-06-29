@@ -2,7 +2,7 @@
     include_once('connection.php');
 
     if(isset($_GET['id'])) {
-        $stmt = $connect->prepare("SELECT * FROM reizen where id = :id ");
+        $stmt = $connect->prepare("SELECT * FROM reizen where reisID = :id ");
         $stmt->execute(['id' => $_GET['id']]);
         $data = $stmt->fetch();
     }
