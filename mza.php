@@ -19,8 +19,8 @@
                 <ul>             
                 <li><a id="lr" href="eu.php">Europa</a></li>	
 				<li><a id="lr" href="mo.php">Midden-Oosten</a></li>
-                <li><a id="lr" href="mza.php">Midden- Zuid-Amerika</a></li>
-				<li><a id="lr" href="na.php">Noord-Amerika</a></li>
+				<li><a id="lr" href="na.php">Noord-Amerika, Oceanië</a></li>
+                <li><a id="lr" href="mza.php">Zuid-Amerika</a></li>
 				<li><a id="lr" href="azië.php">Azië</a></li>
                 <li><a id="lr" href="afrika.php">Afrika</a></li>
                 </ul></li>
@@ -30,13 +30,13 @@
             </ul>
         </nav>
     <div class="mzacontainer">
-           <h1>Populaire Bestemmingen in Midden- en Zuid-Amerika </h1>
+           <h1>Populaire Bestemmingen in Zuid-Amerika </h1>
            <a href="bestemmingen.php">Alle Bestemmingen ></a>
         <div class="alle-images2">
             <div class="linkerkant2">
                 <div class="image2">
                     <div id="zoom-in2">
-                    <figure>
+                    <figure onclick="document.location='form.php'">
                             <img src="img/brazil-image2.jpg" alt="">
                         <div class="image-tekst">
                         <h4>Brazilië</h4>
@@ -46,7 +46,7 @@
             </div>
             <div class="image2">
                 <div id="zoom-in2">
-                    <figure>
+                    <figure onclick="document.location='form.php'">
                         <img src="img/argentina-image.jpg" alt="">
                     <div class="image-tekst">
                         <h4>Argeninië</h4>
@@ -56,7 +56,7 @@
             </div>
             <div class="image2">
                 <div id="zoom-in2">
-                    <figure>
+                    <figure onclick="document.location='form.php'">
                         <img  src="img/suriname-image.jpg" alt="">
                     <div class="image-tekst">
                         <h4>Suriname</h4>
@@ -66,10 +66,10 @@
             </div>
             <div class="image2">
                 <div id="zoom-in2">
-                    <figure>
-                        <img src="img/mexico-image.jpg" alt="">
+                    <figure onclick="document.location='form.php'">
+                        <img src="img/peru-image.jpg" alt="">
                     <div class="image-tekst">
-                        <h4>Mexico</h4>
+                        <h4>Peru</h4>
                     </div>
                     </figure>
                 </div>
@@ -78,7 +78,7 @@
             <div class="rechterkant2">
             <div class="image2">
                 <div id="zoom-in2">
-                    <figure>
+                    <figure onclick="document.location='form.php'">
                         <img src="img/colombia-image.jpg" alt="" >
                         <div class="image-tekst">
                             <h4>Colombia</h4>

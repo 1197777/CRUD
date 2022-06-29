@@ -4,7 +4,7 @@ $host = 'localhost';
 $db = 'crud2';
 $user = 'root';
 $pass = '';
-$charset = 'utf8mb4';
+$charset = 'utf8mb4'; 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 $opt = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
@@ -21,4 +21,4 @@ catch (PDOException $e)
     echo $e->getMessage();
     die("Sorry, Database probleem");
 }
-?>
+// ?>

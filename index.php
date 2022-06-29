@@ -7,6 +7,7 @@ include_once('connection.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
@@ -23,8 +24,8 @@ include_once('connection.php');
                 <ul>             
 				<li><a href="eu.php">Europa</a></li>	
 				<li><a href="mo.php">Midden-Oosten</a></li>
-                <li><a href="mza.php">Midden- Zuid-Amerika</a></li>
-				<li><a href="na.php">Noord-Amerika</a></li>
+				<li><a href="na.php">Noord-Amerika, Oceanië</a></li>
+                <li><a href="mza.php">Zuid-Amerika</a></li>
 				<li><a href="azië.php">Azië</a></li>
                 <li><a href="afrika.php">Afrika</a></li>
                 </ul></li>
@@ -37,10 +38,13 @@ include_once('connection.php');
             <h1>Verre Reizen. Voor Iedereen Uniek.</h1>
             <h2>Maak van jouw eerstvolgende reis een unieke ervaring!</h2>
         </div>
-        <div class="container-box">
-          
-        </div>
     </div>
+    <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Typ om te zoeken...">
+            <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
     <div class="container-stuk">
         <div class="container-stukje">
             <h1>TravelSpace brengt je dichterbij</h1>
@@ -60,8 +64,8 @@ include_once('connection.php');
             <div class="linkerkant">
                 <div class="image">
                     <div id="zoom-in">
-                    <figure>
-                            <img src="img/spain-image.jpg" alt="">
+                        <figure onclick="document.location='form.php'" > 
+                        <img src="img/spain-image.jpg" alt="">
                         <div class="image-tekst">
                         <h4>Spanje</h4>
                     </div>
@@ -70,7 +74,7 @@ include_once('connection.php');
             </div>
             <div class="image">
                 <div id="zoom-in">
-                    <figure>
+                    <figure onclick="document.location='form.php'">
                         <img src="img/turkey-image.jpg" alt="">
                     <div class="image-tekst">
                         <h4>Turkije</h4>
@@ -80,7 +84,7 @@ include_once('connection.php');
             </div>
             <div class="image">
                 <div id="zoom-in">
-                    <figure>
+                    <figure onclick="document.location='form.php'">
                         <img src="img/us-image.jpg" alt="">
                     <div class="image-tekst">
                         <h4>Amerika</h4>
@@ -90,7 +94,7 @@ include_once('connection.php');
             </div>
             <div class="image">
                 <div id="zoom-in">
-                    <figure>
+                    <figure onclick="document.location='form.php'">
                         <img src="img/thailand-image.jpg" alt="">
                     <div class="image-tekst">
                         <h4>Thailand</h4>
@@ -103,7 +107,7 @@ include_once('connection.php');
             <div class="rechterkant">
             <div class="image">
                 <div id="zoom-in">
-                    <figure>
+                    <figure onclick="document.location='form.php'">
                         <img src="img/brazil-image.jpg" alt="" >
                         <div class="image-tekst">
                             <h4>Brazilië</h4>
@@ -115,5 +119,26 @@ include_once('connection.php');
             </div>
           </div>
     </div>
+    <div class="footer">
+  <div class="col-1">
+    <h3>Gebruikbare links</h3>
+    <a href="bestemmingen.php">Bestemmingen</a>
+    <a href="overons.php">Over ons</a>
+    <a href="login.php">Login</a>
+  </div>
+  <div class="col-2">
+    <h3>Newslatter</h3>
+    <div class="tm">
+      <input type="email" placeholder="Email Adress...">
+      <button type="submit">Stuur</button>
+</div>
+  </div>
+  <div class="col-3">
+    <h3>Neem Contact op</h3>
+    <a href="contact.php">
+    <button>Contact</button>
+    </a>
+    <p>1093 EX, 020, Netherlands, Email: contact@travelspace.com</p>
+  </div>
 </body>
 </html>

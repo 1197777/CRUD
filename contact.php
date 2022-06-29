@@ -22,10 +22,11 @@ include_once('connection.php');
                 <input type="text" class="field" placeholder="Telefoon..." name="phone">
                 <textarea class="field area" placeholder="Message..." name="message"></textarea>
                 <button class="btn" name="submit">Stuur</button>
-                </form>
-            </div>
+         </form>
         </div>
-    </div>
+         </div>
+    
+</div>
 </form>
 </body>
 </html>
