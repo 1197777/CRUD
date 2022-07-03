@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<form action="book.php" method="post" class="book-form">
 
 	<div class="wrapper">
 
@@ -19,20 +20,20 @@
 			</div>
 
 			<div class="container-form">
-				<form action="#">
+				<form action="book.php">
 					<h2 class="heading heading-yellow">Reis Boeken</h2>
 
 					<div class="form-field">
 						<p>Naam</p>
-						<input type="text" placeholder="Naam...">
+						<input type="text" placeholder="Naam..." name="naam">
 					</div>
 					<div class="form-field">
 						<p>Email</p>
-						<input type="email" placeholder="Email...">
+						<input type="email" placeholder="Email..." name="email">
 					</div>
 					<div class="form-field">
 						<p>Datum</p>
-						<input type="date">
+						<input type="date" name="startDatum" name="eindDatum">
 					</div>
 					<div class="form-field">
 						<p>Datum</p>
@@ -80,6 +81,7 @@
 			</div>
 		</div>
 	</div>
+	</from>
 
 </body>
 

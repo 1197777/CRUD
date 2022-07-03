@@ -3,11 +3,12 @@ include_once('connection.php');
 
 session_start();
 
-if (!$_SESSION['admin']){
+if  $_SESSION['user'] = $data['username'];{
     header("Location: login.php");
-}
+    }
 
-$sql = "SELECT * FROM reizen";
+
+$sql = "SELECT gebruikerID FROM boekingen WHERE gebruikerID = :gebruikerID";
 $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
@@ -23,10 +24,10 @@ $result = $stmt->fetchAll();
 </tr>
 <?php foreach($result as $re){?>
     <tr>
-        <td><?php echo $re["hotel"];?></td> 
-        <td><?php echo $re["kosten"];?></td>
-        <td><?php echo $re["land"];?></td>
-        <td><a href="edit.php?id=<?php echo $re["reisID"];?>">Update</a></td>
+        <td><?php echo $re["naam"];?></td> 
+        <td><?php echo $re["besteming"];?></td>
+        <td><?php echo $re["startDatum"];?></td>
+        <td><?php echo $re["eindDatum"];?></td>
         <td><a href="delete.php?id=<?php echo $re["reisID"];?>">Delete</a></td>
       </td>
 </tr>

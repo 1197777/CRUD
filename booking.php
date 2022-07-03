@@ -17,6 +17,7 @@ $result = $stmt->fetchAll();
         <td><?php echo $re["personen"];?></td>
         <td><?php echo $re["startDatum"];?></td>
         <td><?php echo $re["eindDatum"];?></td>
+        <td><a href="delete_book.php?id=<?php echo $re["boekingID"];?>">Delete</a></td>
       </td>
 </tr>
 

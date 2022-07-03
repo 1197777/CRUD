@@ -21,7 +21,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             header("Location: admin.php");
             exit();
         }
-        header("Location: index.php");
+        header("Location: admin.php");
         exit();
     } else {
         // header("Location: login.php");

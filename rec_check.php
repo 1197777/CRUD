@@ -7,7 +7,7 @@ if (!$_SESSION['admin']){
     header("Location: login.php");
 }
 
-$sql = "SELECT * FROM gebruikers";
+$sql = "SELECT * FROM recensies";
 $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
@@ -15,17 +15,17 @@ $result = $stmt->fetchAll();
 <a href="insert.php">insert</a>
 <a href="loguit.php">uitloggen</a> 
 <a href="admin.php">admin</a>
-<a href="rec_check.php">recensies</a>
+<a href="recensies.php">recensies</a>
 <table>
     <tr>
 </tr>
 <?php foreach($result as $re){?>
     <tr>
-        <td><?php echo $re["gebruikersnaam"];?></td> 
-        <td><?php echo $re["wachtwoord"];?></td>
-        <td><?php echo $re["gebruikerID"];?></td>
-        <td><a href="edit_admin.php?id=<?php echo $re["gebruikerID"];?>">Update</a></td>
-        <td><a href="delete.php?id=<?php echo $re["gebruikerID"];?>">Delete</a></td>
+        <td><?php echo $re["naam"];?></td> 
+        <td><?php echo $re["email"];?></td>
+        <td><?php echo $re["titel"];?></td>
+        <td><a href="edit_admin.php?id=<?php echo $re["recensiesID"];?>">Update</a></td>
+        <td><a href="delete.php?id=<?php echo $re["recensiesID"];?>">Delete</a></td>
       </td>
 </tr>
 
