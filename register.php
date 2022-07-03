@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,31 +14,30 @@
     <div class="bg-img">
         <div class="content">
             <header>Registreer</header>
-            <form id="form" action="#" method="post">
+            <form id="form" action="reg.php" method="post">
                 <div class="field2">
                     <span class="fa fa-user"></span>
-                    <input type="text" required placeholder="Gebruikernaam..." name="username">
+                    <input type="text" required placeholder="Gebruikernaam..." name="gebruikersnaam">
                 </div>
                 <div class="field2">
                     <span class="fa fa-envelope"></span>
                 <input type="text" required placeholder="Email..." name="el" id="email" onkeydown="validation()">
+            
+                </div>
                 <span id="text"></span>
-                </div>
                 <div class="field space">
                     <span class="fa fa-lock"></span>
-                    <input type="password" class="password" required placeholder="Wachtwoord..." name="password">
+                    <input type="password" class="password" required placeholder="Wachtwoord..." name="wachtwoord">
                     <span class="show">Show</span>
                 </div>
-                <div class="field space">
-                    <span class="fa fa-lock"></span>
-                    <input type="password" class="password" required placeholder="Wachtwoord herhalen..." name="password">
-                    <span class="show">Show</span>
-                </div>
+  
                 <div class="field2">
                     <a href="login.php">
-                    <input type="submit" value="Registreer" name="submit">
+                    <input type="submit" value="Registreer" name="toevoegen">
                     </a>
                 </div>
+                <div class="signup">Al een account?
+                    <a href="login.php">Inloggen</a>
                 </div>
             </form>
         </div>

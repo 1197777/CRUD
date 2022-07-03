@@ -12,8 +12,8 @@
         $stmt = $connect->prepare($sql);
         $stmt->bindParam(':hotel', $_POST['hotel']);
         $stmt->bindParam(':kosten', $_POST['kosten']);
-        $stmt->bindParam(':startdatum', $_POST['startDatum']);
-        $stmt->bindParam(':einddatum', $_POST['eindtDatum']);
+        $stmt->bindParam(':startDatum', $_POST['startDatum']);
+        $stmt->bindParam(':eindDatum', $_POST['eindDatum']);
         $stmt->bindParam(':land', $_POST['land']);
         $stmt->bindParam(':id', $_GET['id']);
         $stmt->execute();

@@ -12,6 +12,10 @@ $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
 ?>
+
+<link rel="stylesheet" href="css/admin.css">
+    <body>
+    <nav>
 <a href="insert.php">insert</a>
 <a href="loguit.php">uitloggen</a> 
 <a href="booking.php">booking</a>
@@ -21,6 +25,8 @@ $result = $stmt->fetchAll();
 <table>
     <tr>
 </tr>
+  </body>
+
 <?php foreach($result as $re){?>
     <tr>
         <td><?php echo $re["hotel"];?></td> 

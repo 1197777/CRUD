@@ -22,12 +22,12 @@ if(isset($_POST["toevoegen"])){
       header("Location: admin.php");
   }
 ?>
-    
-    <form action="#" method="post">
-    startdatum<input type= "text" name="startDatum" id="" ><br/> 
-    einddatum<input type= "text" name="eindtDatum" id="" ><br/> 
-    kosten<input type= "text" name="kosten" id=""><br/> 
-    hotel<input type= "text" name="hotel" id=""><br/> 
-    land<input type= "text" name="land" id=""><br/> 
-    <input type="submit" value="toevoegen" name="toevoegen">
+    <link rel="stylesheet" href="css/admin.css">
+    <form id="it" action="#" method="post">
+    Startdatum<input type= "date" name="startDatum" id="" ><br/> 
+    Einddatum<input type= "date" name="eindtDatum" id="" ><br/> 
+    Kosten<input type= "text" name="kosten" id=""><br/> 
+    Hotel<input type= "text" name="hotel" id=""><br/> 
+    Land<input type= "text" name="land" id=""><br/> 
+    <input type="submit" value="Toevoegen" name="toevoegen">
 </form>
