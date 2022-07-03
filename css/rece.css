@@ -1,0 +1,240 @@
+body {
+    background-color: #d1f3e7;
+  }
+  
+  #title-Tag-Line {
+    font-size: 20px;
+  }
+  /* .card-item__bg{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: block;
+    position: relative;
+    margin: 30px auto;
+    transform: translate(0px, 50px);
+    z-index: 5;
+  } */
+  
+  /* form animation starts */
+  .form {
+    background: #fff;
+    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    border-radius: 5px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    border-top: 5px solid #0e3721;
+  /*   z-index: 1; */
+    animation: bounce 1.5s infinite;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 1.3em;
+  }
+  
+  .title{
+    display: block;
+    font-family: sans-serif;
+    margin: 10px auto 5px;
+    width: 300px;
+  }
+  .termsConditions{
+    margin: 0 auto 5px 80px;
+  }
+  
+  .pageTitle{
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .secondaryTitle{
+    color: grey;
+  }
+  
+  .name {
+    background-color: #ebebeb;
+    color: white;
+  }
+  .name:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+  }
+  
+  .email {
+    background-color: #ebebeb;
+    height: 2em;
+  }
+  
+  .email:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+  }
+  
+  .message {
+    background-color: #ebebeb;
+    overflow: hidden;
+    height: 10rem;
+  }
+  
+  .message:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 12em;
+    width: 380px;
+    transition: ease 0.5s;
+  }
+  
+  .formEntry {
+    display: block;
+    margin: 30px auto;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .submit {
+    width: 200px;
+    color: white;
+    background-color: #0e3721;
+    font-size: 20px;
+  }
+  
+  .submit:hover {
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+    transform: translateY(-3px);
+    width: 300px;
+    border-top: 5px solid #0e3750;
+    border-radius: 0%;
+  }
+  
+  @keyframes bounce {
+    0% {
+      tranform: translate(0, 4px);
+    }
+    50% {
+      transform: translate(0, 8px);
+    }
+  } 
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .nav-area {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background: rgba(0, 0, 0, 0.1)
+  }
+  
+  .nav-area:after {
+    content: '';
+    clear: both;
+    display: block;
+    height: auto;
+  } 
+  nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 6px 6px;
+  }
+    .nav-area ul {
+      list-style: none;
+      margin: 5;
+    }
+    .nav-area>ul>li {
+      position: relative;
+    }
+    .nav-area ul li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 3px 8px;
+      display: block;
+    }
+    .nav-area ul ul li  {
+      background: rgba(0, 0, 0, 0.5);
+      width: 8rem;
+    }
+    .nav-area ul ul {
+      position: absolute;
+      padding: 0;
+      min-width: 150px;
+      display: none;
+      top: 100%;
+      left: 0;
+      z-index: 99;
+    }
+    .nav-area ul li:hover>ul {
+      display: block;
+      left: 15px;
+    }
+    .nav-area ul ul li:hover a {
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .nav-area ul ul li {
+      position: relative;
+    }
+    .nav-area ul ul ul {
+      top: 0;
+      left: 100%;
+    }
+    .nav-area ul ul ul li:hover a {
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .logo1{
+      width: 50px;
+    }
+    .logoh1{
+      font-size: 22px;
+      margin-right: 560px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #000
+    }
+    li a::after {
+      content: "";
+      position: absolute;
+      background-color: #fff;
+      height: 2px;
+      width: 0;
+      left: 0;
+      bottom: -3px;
+      transition: 0.4s;
+    }
+    a:hover::after {
+      width: 100%;
+    }
+    a, button{
+      font-size: 19px;
+      font-weight: 500;
+      color: rgb(255, 255, 255);
+      font-family: "Poppins", sans-serif;
+      text-decoration: none;
+      position: relative;
+      cursor: pointer;
+    }
+    .bannerimage{
+      background: url(../img/bannerimage.png) no-repeat;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+    tr{
+        font-size: 17px;
+        border: 1px solid;
+        color: #fff;
+    }

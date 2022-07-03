@@ -3,13 +3,14 @@ include_once('connection.php');
 
 if(isset($_POST["toevoegen"])){
 
+
     $sql = "INSERT INTO recensies
   
               (titel, email, datum, naam)
   
               VALUES
   
-              (:titel, :email,  :datum, :naam)";
+              (:titel, :email, :datum, :naam)";
   
       $stmt = $connect->prepare($sql);
   
@@ -20,8 +21,6 @@ if(isset($_POST["toevoegen"])){
       $stmt->bindParam(':titel', $_POST['titel']);
 
       $stmt->bindParam(':datum', $_POST['datum']);
-
-      echo"gelukt"
      
       $stmt->execute();  
       header("Location: index.php");

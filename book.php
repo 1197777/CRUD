@@ -1,7 +1,7 @@
 <?php 
 include_once('connection.php');
 
-if(isset($_POST["toevoegen"])){
+if('hoi' == 'hoi'){
     session_start();
 
     $sql = "SELECT reisID FROM reizen WHERE land = :land";
@@ -10,6 +10,7 @@ if(isset($_POST["toevoegen"])){
     $stmt->execute();  
 
     $result = $stmt->fetch();
+    var_dump($result);
     if($result){
     
 
@@ -40,9 +41,11 @@ if(isset($_POST["toevoegen"])){
       $stmt->bindParam(':startDatum', $_POST['startDatum']);
 
       $stmt->bindParam(':eindDatum', $_POST['eindDatum']);
-      echo"gelukt";
      
       $stmt->execute();  
+      header("Location: user_index.php");
     }
-    //   header("Location: index.php");
+    echo 'poep';
 }
+
+echo 'poep';
