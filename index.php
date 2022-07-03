@@ -40,11 +40,26 @@ include_once('connection.php');
         </div>
     </div>
     <div class="search-box">
-            <input class="search-txt" type="text" name="" placeholder="Typ om te zoeken...">
-            <a class="search-btn" href="#">
-                <i class="fas fa-search"></i>
-            </a>
+    <form method="post">
+        <input type="text" name="search" placeholder="Typ om te zoeken..." required/>
+        <input type="submit" value="🔎" class="bm">
+    </form>
         </div>
+        <div class="kl">
+
+            <?php
+
+if (isset($_POST["search"])) {
+    
+    require "search.php";
+    if (count($results) > 0) { 
+        foreach ($results as $r) {
+            echo "<div>" . $r['land'] . " - " . $r['werelddeel'] . "</div>";
+        }
+    } else { echo "<div>No results found.</div>"; }
+}
+?>
+</div>
     <div class="container-stuk">
         <div class="container-stukje">
             <h1>TravelSpace brengt je dichterbij</h1>

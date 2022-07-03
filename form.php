@@ -31,11 +31,11 @@
 						<input type="email" placeholder="Email...">
 					</div>
 					<div class="form-field">
-						<p>Datum</p>
+						<p>Startdatum</p>
 						<input type="date">
 					</div>
 					<div class="form-field">
-						<p>Datum</p>
+						<p>Einddatum</p>
 						<input type="date">
 					</div>
 					<div class="form-field">
@@ -46,32 +46,32 @@
 							<option value="3">Frankrijk</option>
 							<option value="4">Duitsland</option>
 							<option value="5">Italië</option>
-							<option value="5+">Griekenland</option>
-							<option value="5+">Turkije</option>
-							<option value="5+">Verenigde Arabische Emiraten</option>
-							<option value="5+">Qatar</option>
-							<option value="5+">Oman</option>
-							<option value="5+">Egypte</option>
-							<option value="5+">Amerika</option>
-							<option value="5+">Canada</option>
-							<option value="5+">Mexico</option>
-							<option value="5+">Australië</option>
-							<option value="5+">Nieuw-Zeeland</option>
-							<option value="5+">Brazilië</option>
-							<option value="5+">Argentinië</option>
-							<option value="5+">Suriname</option>
-							<option value="5+">Colombia</option>
-							<option value="5+">Peru</option>
-							<option value="5+">China</option>
-							<option value="5+">Thailand</option>
-							<option value="5+">Japan</option>
-							<option value="5+">India</option>
-							<option value="5+">Bali</option>
-							<option value="5+">Kenia</option>
-							<option value="5+">ALgerije</option>
-							<option value="5+">Madagaskar</option>
-							<option value="5+">Zuid-Afrika</option>
-							<option value="5+">Marokko</option>
+							<option value="6">Griekenland</option>
+							<option value="7">Turkije</option>
+							<option value="8">Verenigde Arabische Emiraten</option>
+							<option value="9">Qatar</option>
+							<option value="10">Oman</option>
+							<option value="11">Egypte</option>
+							<option value="12">Amerika</option>
+							<option value="13">Canada</option>
+							<option value="14">Mexico</option>
+							<option value="15">Australië</option>
+							<option value="16">Nieuw-Zeeland</option>
+							<option value="17">Brazilië</option>
+							<option value="18">Argentinië</option>
+							<option value="19">Suriname</option>
+							<option value="20">Colombia</option>
+							<option value="21">Peru</option>
+							<option value="22">China</option>
+							<option value="23">Thailand</option>
+							<option value="24">Japan</option>
+							<option value="25">India</option>
+							<option value="26">Bali</option>
+							<option value="27">Kenia</option>
+							<option value="28">Algerije</option>
+							<option value="29">Madagaskar</option>
+							<option value="30">Zuid-Afrika</option>
+							<option value="31">Marokko</option>
 						</select>
 					</div>
 

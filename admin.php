@@ -12,14 +12,20 @@ $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
 ?>
-<a href="insert.php">insert</a>
-<a href="loguit.php">uitloggen</a> 
-<a href="booking.php">booking</a>
-<a href="account.php">account</a>
-<a href="recensies.php">recensies</a>
-<table>
-    <tr>
-</tr>
+<link rel="stylesheet" href="css/admin.css">
+    <body>
+    <nav>
+    <a  class="ins" href="insert.php">Insert</a>
+    <a href="booking.php">Booking</a>
+    <a href="account.php">Account</a>
+    <a href="recensies.php">Recensies</a>
+    <a href="loguit.php">Uitloggen</a> 
+    <div class="animation start-home"></div>
+    <table>
+        <tr>
+    </tr>
+    </nav>
+  </body>
 <?php foreach($result as $re){?>
     <tr>
         <td><?php echo $re["hotel"];?></td> 

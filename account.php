@@ -12,13 +12,17 @@ $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
 ?>
-<a href="insert.php">insert</a>
-<a href="loguit.php">uitloggen</a> 
-<a href="admin.php">admin</a>
-<a href="recensies.php">recensies</a>
+<link rel="stylesheet" href="css/admin.css">
+<nav>
+<a href="insert.php">Insert</a>
+<a href="loguit.php">Uitloggen</a> 
+<a href="admin.php">Admin</a>
+<a href="recensies.php">Recensies</a>
+<div class="animation start-home"></div>
 <table>
     <tr>
 </tr>
+</nav>
 <?php foreach($result as $re){?>
     <tr>
         <td><?php echo $re["gebruikersnaam"];?></td> 
