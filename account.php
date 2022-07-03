@@ -12,13 +12,14 @@ $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
 ?>
+
 <link rel="stylesheet" href="css/admin.css">
 <nav>
-<a href="insert.php">Insert</a>
-<a href="loguit.php">Uitloggen</a> 
-<a href="admin.php">Admin</a>
-<a href="recensies.php">Recensies</a>
-<div class="animation start-home"></div>
+<a href="insert.php">insert</a>
+<a href="loguit.php">uitloggen</a> 
+<a href="admin.php">admin</a>
+<a href="rec_check.php">recensies</a>
+
 <table>
     <tr>
 </tr>
@@ -28,7 +29,7 @@ $result = $stmt->fetchAll();
         <td><?php echo $re["gebruikersnaam"];?></td> 
         <td><?php echo $re["wachtwoord"];?></td>
         <td><?php echo $re["gebruikerID"];?></td>
-        <td><a href="edit.php?id=<?php echo $re["gebruikerID"];?>">Update</a></td>
+        <td><a href="edit_admin.php?id=<?php echo $re["gebruikerID"];?>">Update</a></td>
         <td><a href="delete.php?id=<?php echo $re["gebruikerID"];?>">Delete</a></td>
       </td>
 </tr>
